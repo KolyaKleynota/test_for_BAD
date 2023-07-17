@@ -34,7 +34,7 @@ def unique_letter(text_par):
         first_letters.append(my_foo(word))
 
     result = my_foo(first_letters)
-    print("here is result ", result)
+    print("result is ", result)
 
 
 if __name__ == "__main__":
