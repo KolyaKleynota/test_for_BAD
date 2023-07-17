@@ -32,7 +32,6 @@ def unique_letter(text_par):
 
     for word in words:
         first_letters.append(my_foo(word))
-    print("here a first letters", first_letters)
 
     result = my_foo(first_letters)
     print("here is result ", result)
