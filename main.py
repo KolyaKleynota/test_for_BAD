@@ -13,21 +13,19 @@ text2 = """C makes it easy for you to shoot yourself in the foot. C++ makes that
 but when you do, it blows away your whole leg. (с) Bjarne Stroustrup"""
 
 
-def my_foo(first_letters):
+def my_foo(word):
     flag = False
-    for i in range(len(first_letters)):
+    for i in range(len(word)):
         flag = False
-        for j in range(i + 1, len(first_letters)):
-            if first_letters[i] == first_letters[j]:
+        for j in range(i + 1, len(word)):
+            if word[i] == word[j]:
                 flag = True
         if not flag:
-            return first_letters[i]
+            return word[i]
 
 
 def unique_letter(text_par):
-    text = text_par
-
-    words = text.split()
+    words = text_par.split()
     first_letters = []
 
     for word in words:
